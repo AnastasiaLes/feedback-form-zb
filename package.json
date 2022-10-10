@@ -2,7 +2,7 @@
   "name": "feedback-form-zb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://goitacademy.github.io/feedback-form-zb/",
+  "homepage": "https://AnastasiaLes.github.io/feedback-form-zb/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
