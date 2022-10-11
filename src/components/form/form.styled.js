@@ -1,12 +1,24 @@
 import styled from '@emotion/styled';
 import { Field } from 'formik';
+import BgImg from '../../images/Contact.png'
 
+export const Container = styled.div`
+/* min-height: 85vh; */
+display: flex;
+align-items: center;
+height: 920px;
+/* background-image: url(${BgImg});
+background-repeat: no-repeat;
+    background-size: cover;
+width: 100vw;
+height: 85vh; */
+`;
 
 export const FormContainer = styled.div`
  /* display: flex; */
- max-width: 563px;
-   margin-left: 147px;
-  margin-top: 179px;
+ width: 563px;
+  margin-left: 147px;
+  /* margin-top: 179px; */
   /* padding: 32px 20px 36px 20px;
   margin-right: auto;
   margin-left: auto;
@@ -36,10 +48,13 @@ color: #3E3E3E;
 `;
 
 export const FormField = styled(Field)`
-  /* position: relative; */
+  position: relative; 
+  outline: none;
+
   width: 100%;
   display: flex;
   margin-bottom: 8px;
+  max-height: 93px;
   padding-bottom: 30px;
   padding-top: 30px;
   padding-left: 46px;
