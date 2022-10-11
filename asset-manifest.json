@@ -1,13 +1,16 @@
 {
   "files": {
     "main.css": "/feedback-form-zb/static/css/main.7acaea2f.css",
-    "main.js": "/feedback-form-zb/static/js/main.a4f9b011.js",
+    "main.js": "/feedback-form-zb/static/js/main.7a524d20.js",
+    "static/media/Mask Group.png": "/feedback-form-zb/static/media/Mask Group.066b61d3e2513916c30e.png",
+    "static/media/Contact.png": "/feedback-form-zb/static/media/Contact.2af3386fee2ed2541d49.png",
+    "static/media/Cloud.png": "/feedback-form-zb/static/media/Cloud.f8ee4f4f3899dcf80296.png",
     "index.html": "/feedback-form-zb/index.html",
     "main.7acaea2f.css.map": "/feedback-form-zb/static/css/main.7acaea2f.css.map",
-    "main.a4f9b011.js.map": "/feedback-form-zb/static/js/main.a4f9b011.js.map"
+    "main.7a524d20.js.map": "/feedback-form-zb/static/js/main.7a524d20.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.a4f9b011.js"
+    "static/js/main.7a524d20.js"
   ]
 }
