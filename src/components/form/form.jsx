@@ -6,6 +6,7 @@ import {
     useFormikContext
 } from 'formik';
 import * as yup from 'yup';
+import swal from 'sweetalert';
 
 import { useGetFeedbacksQuery, useAddFeedbackMutation } from 'redux/feedbackSlice';
 
@@ -18,7 +19,7 @@ const initialValues = {
         message: '',
 };
   
-const RegEx  = /^((([0-9A-Za-z]{1}[-0-9A-z.]{1,}[0-9A-Za-z]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/;
+const RegEx  = /^((([0-9A-Za-z]{1}[-0-9A-z.]{1,}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/;
 
 const schema = yup.object().shape({
         name: yup.string().required(),
@@ -56,6 +57,11 @@ const FeedbackForm = () => {
         addContact(newFeedback);
         console.log(data);
         resetForm();
+        swal({
+      title: "Thank you!",
+      icon: "success",
+      button: false,
+});
     }
 
     const FormError = ({ name }) => {
@@ -104,7 +110,7 @@ const FeedbackForm = () => {
                     
                         <SubmitBtn
                             type="submit"
-                            disabled={!name || !email || !message}
+                            disabled={!name || !String(email).match(RegEx) || !message}
                         >Send message</SubmitBtn>
                 </Form>
             </Formik>
