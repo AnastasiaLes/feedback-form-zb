@@ -54,7 +54,7 @@ const FeedbackForm = () => {
             message
         }
         addContact(newFeedback);
-        // console.log(data);
+        console.log(data);
         resetForm();
     }
 
