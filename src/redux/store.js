@@ -1,9 +1,18 @@
 import { configureStore} from '@reduxjs/toolkit';
-import {feedbackReducer} from './feedbackSlice';
+
+// import { setupListeners } from '@reduxjs/toolkit/dist/query';
+import { myFeedbackApi } from './feedbackSlice';
+
 
 export const store = configureStore({
-    reducer: {
-        feedback: feedbackReducer,
+  reducer: {
+    [myFeedbackApi.reducerPath]: myFeedbackApi.reducer,
   },
-})
+    middleware: (getDefaultMiddleware) => [
+    ...getDefaultMiddleware(),
+    myFeedbackApi.middleware,
+  ],
+});
+
+// setupListeners(store.dispatch);
 
